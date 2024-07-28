@@ -28,4 +28,9 @@ Route::view('/detail', 'detail');
 Route::view('/feature', 'feature');
 Route::view('/team', 'team');
 Route::view('/testimonial', 'testimonial');
+Route::view('/login', 'login');
 // Add other routes as needed
+
+Auth::routes();
+
+Route::get('/index', [App\Http\Controllers\HomeController::class, 'index'])->name('index');

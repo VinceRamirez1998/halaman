@@ -292,3 +292,13 @@
         margin-top: 90px !important;
     }
 }
+
+#navMain{
+    background-color: #073a29;
+}
+#loginModalLabel{
+    color: white;
+}
+#registerModalLabel{
+    color: white;
+}
