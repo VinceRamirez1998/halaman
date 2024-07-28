@@ -16,3 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+
+Route::view('/home', 'index');
+Route::view('/about', 'about');
+Route::view('/service', 'service');
+Route::view('/product', 'product');
+Route::view('/contact', 'contact');
+Route::view('/blog', 'blog');
+Route::view('/detail', 'detail');
+Route::view('/feature', 'feature');
+Route::view('/team', 'team');
+Route::view('/testimonial', 'testimonial');
+// Add other routes as needed
