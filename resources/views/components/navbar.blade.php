@@ -49,7 +49,7 @@
             <div class="modal-content border-success">
                 <div class="modal-header bg-success text-white">
                     <h5 class="modal-title" id="loginModalLabel">{{ __('Login') }}</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -115,7 +115,7 @@
             <div class="modal-content border-success">
                 <div class="modal-header bg-success text-white">
                     <h5 class="modal-title" id="registerModalLabel">{{ __('Register') }}</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form method="POST" action="{{ route('register') }}">

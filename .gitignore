@@ -1,3 +1,4 @@
+# Ignore common files and directories
 /.phpunit.cache
 /node_modules
 /public/build
@@ -17,3 +18,7 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+# Explicitly include Filament directory in vendor
+!vendor/filament/
+!vendor/filament/**
