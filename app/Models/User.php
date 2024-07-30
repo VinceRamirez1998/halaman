@@ -42,4 +42,21 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    protected static function boot()
+    {
+        parent::boot();
+
+       
+        // Set the published_at attribute before creating the record
+        static::creating(function ($model) {
+            $model->created_at = now()->timezone('Asia/Manila')->toDateTimeString();
+        });
+
+        static::saving(function ($user) {
+            if ($user->isDirty(['name', 'email', 'password', 'department', 'role', 'permission'])) {
+                $user->updated_at = now()->timezone('Asia/Manila')->toDateTimeString();
+            }
+        });
+    }
 }
