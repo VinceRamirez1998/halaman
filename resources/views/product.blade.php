@@ -9,7 +9,14 @@
 
 
     <!-- Navbar Start -->
-    @include('components.navbar')
+    @guest
+    @if (Route::has('login'))
+        @include('components.navbar')
+    @endif
+     @else
+    @include('components.navbarAuth')
+
+    @endguest
     <!-- Navbar End -->
 
 
@@ -43,7 +50,7 @@
                         <h5 class="text-primary mb-0">$19.00</h5>
                         <div class="btn-action d-flex justify-content-center">
                             <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
-                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
+                            <a class="btn bg-secondary py-2 px-3" href=" {{ url('/productView') }} "><i class="bi bi-eye text-white"></i></a>
                         </div>
                     </div>
                 </div>
@@ -54,7 +61,7 @@
                         <h5 class="text-primary mb-0">$19.00</h5>
                         <div class="btn-action d-flex justify-content-center">
                             <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
-                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
+                            <a class="btn bg-secondary py-2 px-3" href="{{ url('/productView') }}"><i class="bi bi-eye text-white"></i></a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +72,7 @@
                         <h5 class="text-primary mb-0">$19.00</h5>
                         <div class="btn-action d-flex justify-content-center">
                             <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
-                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
+                            <a class="btn bg-secondary py-2 px-3" href="{{ url('/productView') }}"><i class="bi bi-eye text-white"></i></a>
                         </div>
                     </div>
                 </div>
@@ -76,7 +83,7 @@
                         <h5 class="text-primary mb-0">$19.00</h5>
                         <div class="btn-action d-flex justify-content-center">
                             <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
-                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
+                            <a class="btn bg-secondary py-2 px-3" href="{{ url('/productView') }}"><i class="bi bi-eye text-white"></i></a>
                         </div>
                     </div>
                 </div>
@@ -87,7 +94,7 @@
                         <h5 class="text-primary mb-0">$19.00</h5>
                         <div class="btn-action d-flex justify-content-center">
                             <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
-                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
+                            <a class="btn bg-secondary py-2 px-3" href="{{ url('/productView') }}"><i class="bi bi-eye text-white"></i></a>
                         </div>
                     </div>
                 </div>

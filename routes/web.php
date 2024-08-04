@@ -29,6 +29,10 @@ Route::view('/feature', 'feature');
 Route::view('/team', 'team');
 Route::view('/testimonial', 'testimonial');
 Route::view('/login', 'login');
+Route::view('/myCart', 'myCart');
+Route::view('/productView', 'productView');
+Route::view('/checkout', 'checkout');
+Route::view('/profile', 'profile');
 // Add other routes as needed
 
 Auth::routes();

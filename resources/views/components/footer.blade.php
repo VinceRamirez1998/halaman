@@ -32,21 +32,10 @@
                             <a class="text-white mb-2" href="{{ url('/about') }}"><i class="bi bi-arrow-right text-white me-2"></i>About Us</a>
                             <a class="text-white mb-2" href="{{ url('/services') }}"><i class="bi bi-arrow-right text-white me-2"></i>Our Services</a>
                             <a class="text-white mb-2" href="{{ url('/team') }}"><i class="bi bi-arrow-right text-white me-2"></i>Meet The Team</a>
-                            <a class="text-white mb-2" href="{{ url('/blog') }}"><i class="bi bi-arrow-right text-white me-2"></i>Latest Blog</a>
                             <a class="text-white" href="{{ url('/contact') }}"><i class="bi bi-arrow-right text-white me-2"></i>Contact Us</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                        <h4 class="text-white mb-4">Popular Links</h4>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white mb-2" href="{{ url('/') }}"><i class="bi bi-arrow-right text-white me-2"></i>Home</a>
-                            <a class="text-white mb-2" href="{{ url('/about') }}"><i class="bi bi-arrow-right text-white me-2"></i>About Us</a>
-                            <a class="text-white mb-2" href="{{ url('/services') }}"><i class="bi bi-arrow-right text-white me-2"></i>Our Services</a>
-                            <a class="text-white mb-2" href="{{ url('/team') }}"><i class="bi bi-arrow-right text-white me-2"></i>Meet The Team</a>
-                            <a class="text-white mb-2" href="{{ url('/blog') }}"><i class="bi bi-arrow-right text-white me-2"></i>Latest Blog</a>
-                            <a class="text-white" href="{{ url('/contact') }}"><i class="bi bi-arrow-right text-white me-2"></i>Contact Us</a>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mt-lg-n5">
@@ -68,7 +57,7 @@
 </div>
 <div class="container-fluid bg-dark text-white py-4">
     <div class="container text-center">
-        <p class="mb-0">&copy; <a class="text-secondary fw-bold" href="https://yourwebsite.com">Your Site Name</a>. All Rights Reserved. Designed by <a class="text-secondary fw-bold" href="https://yourwebsite.com">Your Design Team</a></p>
+        <p class="mb-0">&copy; <a class="text-secondary fw-bold" href="https://yourwebsite.com">ECOGROWSOLUTIONS</a>. All Rights Reserved. Designed by <a class="text-secondary fw-bold" href="https://yourwebsite.com">GROUP CAPSTONE DITO</a></p>
     </div>
 </div>
 
