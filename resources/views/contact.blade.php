@@ -7,7 +7,14 @@
 
 
     <!-- Navbar Start -->
-    @include('components.navbar')
+    @guest
+    @if (Route::has('login'))
+        @include('components.navbar')
+    @endif
+     @else
+    @include('components.navbarAuth')
+
+    @endguest
     <!-- Navbar End -->
 
 

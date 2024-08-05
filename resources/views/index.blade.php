@@ -122,18 +122,7 @@
     <!-- Facts Start -->
     <div class="container-fluid bg-primary facts py-5 mb-5">
         <div class="container py-5">
-            <div class="row gx-5 gy-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex">
-                        <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-star fs-4 text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white">Our Experience</h5>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
-                    </div>
-                </div>
+            <div class="row gx-5 gy-4 align-items-center justify-content-center">
                 <div class="col-lg-3 col-md-6">
                     <div class="d-flex">
                         <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
@@ -145,17 +134,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex">
-                        <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-check fs-4 text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white">Complete Project</h5>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="col-lg-3 col-md-6">
                     <div class="d-flex">
                         <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
@@ -347,30 +326,7 @@
     <!-- Products End -->
 
 
-    <!-- Testimonial Start -->
-    <div class="container-fluid bg-testimonial py-5 my-5">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="owl-carousel testimonial-carousel p-5">
-                        <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto p-2 border border-5 border-secondary rounded-circle mb-4" src="img/testimonial-2.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita justo dolor et stet lorem kasd dolore lorem ipsum. At lorem lorem magna ut et, nonumy labore diam erat. Erat dolor rebum sit ipsum.</p>
-                            <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">Client Name</h4>
-                        </div>
-                        <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto p-2 border border-5 border-secondary rounded-circle mb-4" src="img/testimonial-2.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita justo dolor et stet lorem kasd dolore lorem ipsum. At lorem lorem magna ut et, nonumy labore diam erat. Erat dolor rebum sit ipsum.</p>
-                            <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">Client Name</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
+ 
 
 
     <!-- Team Start -->
@@ -450,45 +406,7 @@
     <!-- Team End -->
 
 
-    <!-- Blog Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="mx-auto text-center mb-5" style="max-width: 500px;">
-                <h6 class="text-primary text-uppercase">Our Blog</h6>
-                <h1 class="display-5">Latest Articles From Our Blog Post</h1>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-4">
-                    <div class="blog-item position-relative overflow-hidden">
-                        <img class="img-fluid" src="img/blog-1.jpg" alt="">
-                        <a class="blog-overlay" href="">
-                            <h4 class="text-white">Lorem elitr magna stet eirmod labore amet</h4>
-                            <span class="text-white fw-bold">Jan 01, 2050</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="blog-item position-relative overflow-hidden">
-                        <img class="img-fluid" src="img/blog-2.jpg" alt="">
-                        <a class="blog-overlay" href="">
-                            <h4 class="text-white">Lorem elitr magna stet eirmod labore amet</h4>
-                            <span class="text-white fw-bold">Jan 01, 2050</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="blog-item position-relative overflow-hidden">
-                        <img class="img-fluid" src="img/blog-3.jpg" alt="">
-                        <a class="blog-overlay" href="">
-                            <h4 class="text-white">Lorem elitr magna stet eirmod labore amet</h4>
-                            <span class="text-white fw-bold">Jan 01, 2050</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Blog End -->
+   
     
 
     <!-- Footer Start -->
