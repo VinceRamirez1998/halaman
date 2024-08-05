@@ -16,10 +16,10 @@ use App\Filament\Resources\PlantsResource\RelationManagers;
 
 class PlantsResource extends Resource
 {
+    
     protected static ?string $model = Plants::class;
-
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
+    protected static ?int $navigationSort = -2;
+    protected static ?string $navigationIcon = 'heroicon-o-globe-asia-australia';
     public static function form(Form $form): Form
     {
         return $form

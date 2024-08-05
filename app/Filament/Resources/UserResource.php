@@ -15,6 +15,10 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class UserResource extends Resource
 {
+    public static function getNavigationBadge(): string
+    {
+        return static::getModel()::count();
+    }
     protected static ?string $model = User::class;
 
     protected static ?string $navigationIcon = 'heroicon-s-user';

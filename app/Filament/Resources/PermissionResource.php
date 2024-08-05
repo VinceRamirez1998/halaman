@@ -24,8 +24,8 @@ class PermissionResource extends Resource
     {
         return $form
             ->schema([
-                TextColumn::make('name')
-                ->unique(),
+                Forms\Components\TextInput::make('name')
+                    ->rules('unique:permissions,name'),
             ]);
     }
 
