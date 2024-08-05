@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->string('status')->nullable();
             $table->string('stocks')->nullable();
+            $table->string('price')->nullable();
+            $table->string('description')->nullable();
             $table->string('remarks', 2048)->nullable();
             $table->datetime('published_at')->nullable();
             $table->foreignIdFor(\App\Models\User::class, 'user_id');

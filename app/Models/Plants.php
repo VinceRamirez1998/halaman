@@ -17,6 +17,8 @@ class Plants extends Model
         'remarks',
         'user_id',
         'published_at',
+        'price',
+        'description',
 
 
     ];

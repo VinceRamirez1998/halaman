@@ -37,16 +37,6 @@ class PlantsResource extends Resource
             Forms\Components\TextInput::make('stocks')
                 ->required()
                 ->columnSpan(1), // Span 1 column
-        
-            // Forms\Components\Select::make('status')
-            //     ->label('Status')
-            //     ->options([
-            //         'approved' => 'Approved',
-            //         'reject' => 'Reject',
-            //         'pending' => 'Pending',
-            //         'revised' => 'Revised',
-            //     ])
-            //     ->columnSpan(1), // Span 1 column
             Forms\Components\TextInput::make('remarks')
             ->nullable()
             ->columnSpan(1), // Span 2 columns if needed
@@ -56,6 +46,14 @@ class PlantsResource extends Resource
                 ->columnSpan(1), // Span 2 columns if needed 
             Forms\Components\Hidden::make('user_id')
                 ->default(auth()->id()), // Sets the current authenticated user's ID
+            Forms\Components\TextInput::make('price')
+                    ->required()
+                    ->numeric()
+                    ->default(0.00)
+                    ->prefix('₱'),
+            Forms\Components\TextInput::make('description')
+                    ->required()
+                    ->maxLength(255),
         ]);
         
     }
@@ -69,6 +67,11 @@ class PlantsResource extends Resource
                 ->columnSpan(2),
             Tables\Columns\TextColumn::make('name')
                 ->searchable(),
+            Tables\Columns\TextColumn::make('price')
+                    ->prefix('₱')
+                    ->sortable(),
+            Tables\Columns\TextColumn::make('description')
+                    ->searchable(),
             Tables\Columns\TextColumn::make('stocks')
                 ->searchable(),
             Tables\Columns\TextColumn::make('remarks')
