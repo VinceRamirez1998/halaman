@@ -7,11 +7,18 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Spatie\Permission\Traits\HasRoles;
+use Filament\Models\Contracts\FilamentUser;
+use Filament\Panel;
 
-class User extends Authenticatable
+
+class User extends Authenticatable implements FilamentUser
+
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens, HasFactory, Notifiable, HasRoles;
 
+
+    
     /**
      * The attributes that are mass assignable.
      *
@@ -21,6 +28,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
     ];
 
     /**
@@ -42,4 +50,36 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    /**
+     * Determine if the user can access Filament.
+     *
+     * @return bool
+     */
+    public function canAccessFilament(): bool
+    {
+        return $this->hasRole('Admin');
+    }
+
+    public function canAccessPanel(Panel $panel): bool
+    {
+        return str_ends_with($this->email, '@admin.com') && $this->hasVerifiedEmail();
+    }
+    
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        // Set the created_at attribute before creating the record
+        static::creating(function ($model) {
+            $model->created_at = now()->timezone('Asia/Manila')->toDateTimeString();
+        });
+
+        static::saving(function ($user) {
+            if ($user->isDirty(['name', 'email', 'password', 'department', 'role', 'permission'])) {
+                $user->updated_at = now()->timezone('Asia/Manila')->toDateTimeString();
+            }
+        });
+    }
 }
